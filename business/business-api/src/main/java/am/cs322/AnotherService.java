@@ -4,5 +4,5 @@ import org.springframework.stereotype.Service;
 
 
 public interface AnotherService {
-    void accountCreation(boolean isCredit);
+    String accountCreation(boolean isCredit, long user_id);
 }

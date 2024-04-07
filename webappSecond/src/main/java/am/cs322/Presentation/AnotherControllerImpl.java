@@ -22,6 +22,6 @@ public class AnotherControllerImpl implements AnotherController {
     @Override
     @PostMapping
     public String createAccount(@RequestBody CreateAnotherRequest request) {
-        return null;
+        return anotherService.accountCreation(request.isCredit(), request.id());
     }
 }
